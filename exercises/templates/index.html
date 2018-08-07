@@ -1,1 +1,21 @@
-<!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title> cnn sports</title>
+	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="title">
+		<h1><b> i love all sports </b></h1>
+		<h2><i> my favourite sport is soccer</i></h2>
+		<p>i have been pplaying football sinceni was 6 years old , i love it soo much</p>
+		<ul>
+			{%for player in players %}
+			<li> {{player}}</li>
+			{%end for %}
+		</ul>
+
+		
+	</div>
+</body>
+</html>
