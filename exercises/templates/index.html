@@ -3,19 +3,40 @@
 <head>
 	<title> cnn sports</title>
 	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	  <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/metro-ui-dock-icon-set--icons-by-dakirby/512/CNN.png">
 </head>
 <body>
 	<div class="title">
 		<h1><b> i love all sports </b></h1>
 		<h2><i> my favourite sport is soccer</i></h2>
-		<p>i have been pplaying football sinceni was 6 years old , i love it soo much</p>
+	</div>
+	<div class="sidebar">
+		<p>i have been playing football since i was 6 years old , i love it soo much</p>
+			</div>
+		<div>
+	<div>
+		{% if likes_same_sports == True %}
+			<p> we like the same sport , HIGHHH FIVEEE</p>
+		{% else %}
+			<p> i love these players :</p>
+		{% endif %}
+
+	</div>
+
 		<ul>
-			{{%for player in players%}}
+			{%for player in players%}
 			<li> {{player}}</li>
-			{{%endfor%}}
+			{%endfor%}
 		</ul>
 
 		
+	</div>
+	<div>
+		<a href="https://en.wikipedia.org/wiki/Iker_Casillas">if you would like to read more about iker casillas , click here</a>
+	</div>
+
+	<div class="pic">
+		<img src="./static/sports.jpg">
 	</div>
 </body>
 </html>

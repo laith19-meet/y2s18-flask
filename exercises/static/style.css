@@ -1,2 +1,20 @@
 /* Put your CSS Styling here! */
 body {background-color: green;}
+
+.title{
+	position: :absolute;
+	top: 50px;
+	left:550px;
+}
+
+.pic {
+	position :absolute;
+	top: 50px;
+	left: 500px;
+}
+
+.siderbar{
+	position :fixed;
+	top: 70px;
+	left: 500px;
+}
